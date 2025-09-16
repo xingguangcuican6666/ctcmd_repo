@@ -39,7 +39,8 @@ move /y "%HOME%%name%\%name%_%arch%_latest.zip" "%HOME%%name%\%name%_%arch%_%ver
 copy /y %1 "%HOME%%name%\%name%_%arch%_latest.zip"
 cd /d %HOME%
 set GIT_SSH_COMMAND=ssh -i C:\\Users\\xingguangcuican\\.ssh\\id_rsa
-call ctcmd_trim_space.bat %HOME%\all.ctcmd
+call %HOME%\ctcmd_trim_space.bat %HOME%\all.ctcmd
+copy /Y "%HOME%\all.ctcmd.trimmed" "%HOME%\all.ctcmd"
 git config --global user.email "xingguangcuican666@foxmail.com"
 git config --global user.name "xingguangcuican6666"
 git add . -v
