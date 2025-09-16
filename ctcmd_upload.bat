@@ -1,4 +1,8 @@
 @echo off
+set now_work="%cd%"
+cd /d %~dp0
+git pull -v
+cd /d %now_work%
 setlocal enabledelayedexpansion
 if "%~4"=="" (
     echo Usage: upload.bat [file] [name] [arch] [last_will_change_version]
@@ -30,4 +34,12 @@ for /f "tokens=* delims=" %%a in ('type "%HOME%\all.ctcmd"') do (
 mkdir "%HOME%%name%"
 move /y "%HOME%%name%\%name%_%arch%_latest.zip" "%HOME%%name%\%name%_%arch%_%version%.zip"
 copy /y %1 "%HOME%%name%\%name%_%arch%_latest.zip"
+cd /d %HOME%
+set GIT_SSH_COMMAND="ssh -i C:\Users\xingguangcuican\.ssh\id_rsa"
+git config --global user.email "xingguangcuican666@foxmail.com"
+git config --global user.name "xingguangcuican6666"
+git add . -v
+git commit -m "upload" -v
+git push -v
+cd /d %now_work%
 endlocal
