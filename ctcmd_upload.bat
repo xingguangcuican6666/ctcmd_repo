@@ -39,31 +39,35 @@ move /y "%HOME%%name%\%name%_%arch%_latest.zip" "%HOME%%name%\%name%_%arch%_%ver
 copy /y %1 "%HOME%%name%\%name%_%arch%_latest.zip"
 cd /d %HOME%
 set GIT_SSH_COMMAND=ssh -i C:\\Users\\xingguangcuican\\.ssh\\id_rsa
-set "infile=%HOME%\all.ctcmd"
-set "outfile=%infile%.trimmed"
 
-(for /f "usebackq delims=" %%a in ("%infile%") do (
+REM 以下为移除 all.ctcmd 每行末尾空格的整合代码
+set "tmpfile=%HOME%\all.ctcmd.trimmed"
+break > "%tmpfile%"
+for /f "usebackq delims=" %%a in ("%HOME%\all.ctcmd") do (
     set "line=%%a"
-    set "line=!line: =!"
-    for /f "tokens=* delims= " %%b in ("!line!") do (
-        set "line=%%a"
-        REM 移除行尾空格
+    REM 移除行尾空格
+    for /f "tokens=* delims=" %%b in ("!line!") do (
+        set "line=%%b"
+        setlocal enabledelayedexpansion
+        set "line=!line!"
         for /f "tokens=* delims=" %%c in ("!line!") do (
             set "line=%%c"
-            setlocal enabledelayedexpansion
-            set "line=!line!"
-            for /f "tokens=* delims=" %%d in ("!line!") do (
-                set "line=%%d"
-                REM 下面这行移除行尾空格
-                set "line=!line!"
-                set "line=!line: =!"
-                echo !line!
+            REM 逐字符从右向左移除空格
+            :trimloop
+            if "!line!"=="" goto trimdone
+            set "lastchar=!line:~-1!"
+            if "!lastchar!"==" " (
+                set "line=!line:~0,-1!"
+                goto trimloop
             )
-            endlocal
+            :trimdone
+            echo !line!>>"%tmpfile%"
         )
+        endlocal
     )
-)) > "%outfile%"
-copy /Y "%HOME%\all.ctcmd.trimmed" "%HOME%\all.ctcmd"
+)
+copy /Y "%tmpfile%" "%HOME%\all.ctcmd"
+
 git config --global user.email "xingguangcuican666@foxmail.com"
 git config --global user.name "xingguangcuican6666"
 git add . -v
