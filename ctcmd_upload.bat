@@ -19,9 +19,9 @@ for /f "tokens=* delims=" %%a in ('type "%HOME%\all.ctcmd"') do (
     set "line=%%a"
     if not "!line!"=="" if not "!line:~0,2!"=="//" (
         for /f "tokens=1,2 delims=@" %%b in ("!line!") do (
-            @REM echo ´¦ÀíĞĞ: !line!
-            @REM echo @Ç°²¿·Ö: %%b
-            @REM echo @ºó²¿·Ö: %%c
+            @REM echo å¤„ç†è¡Œ: !line!
+            @REM echo @å‰éƒ¨åˆ†: %%b
+            @REM echo @åéƒ¨åˆ†: %%c
             @REM echo.
             if "%name%"=="%%b" (
                 echo Found matching name: %%b
@@ -47,14 +47,14 @@ set "outfile=%infile%.trimmed"
     set "line=!line: =!"
     for /f "tokens=* delims= " %%b in ("!line!") do (
         set "line=%%a"
-        REM ÒÆ³ıĞĞÎ²¿Õ¸ñ
+        REM ç§»é™¤è¡Œå°¾ç©ºæ ¼
         for /f "tokens=* delims=" %%c in ("!line!") do (
             set "line=%%c"
             setlocal enabledelayedexpansion
             set "line=!line!"
             for /f "tokens=* delims=" %%d in ("!line!") do (
                 set "line=%%d"
-                REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ
+                REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼
                 set "line=!line!"
                 set "line=!line: =!"
                 echo !line!

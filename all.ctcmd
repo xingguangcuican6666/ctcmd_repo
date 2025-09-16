@@ -4,14 +4,14 @@ set "line=test@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/
  set "line=!line: =!"  
  for /F "tokens=* delims= " %b in ("!line!") do (
 set "line=test@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/test"  
- REM ÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ç§»é™¤è¡Œå°¾ç©ºæ ¼  
  for /F "tokens=* delims=" %c in ("!line!") do (
 set "line=%c"  
  setlocal enabledelayedexpansion  
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -23,14 +23,14 @@ set "line=%d"
 
 C:\Program Files\ctcmd_uploader>(
 set "line=test@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/test"  
- REM ÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ç§»é™¤è¡Œå°¾ç©ºæ ¼  
  for /F "tokens=* delims=" %c in ("!line!") do (
 set "line=%c"  
  setlocal enabledelayedexpansion  
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -45,7 +45,7 @@ set "line=test@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -55,7 +55,7 @@ set "line=%d"
 
 C:\Program Files\ctcmd_uploader>(
 set "line=test@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/test"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -67,14 +67,14 @@ set "line=win@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/r
  set "line=!line: =!"  
  for /F "tokens=* delims= " %b in ("!line!") do (
 set "line=win@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/win"  
- REM ÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ç§»é™¤è¡Œå°¾ç©ºæ ¼  
  for /F "tokens=* delims=" %c in ("!line!") do (
 set "line=%c"  
  setlocal enabledelayedexpansion  
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -86,14 +86,14 @@ set "line=%d"
 
 C:\Program Files\ctcmd_uploader>(
 set "line=win@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/win"  
- REM ÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ç§»é™¤è¡Œå°¾ç©ºæ ¼  
  for /F "tokens=* delims=" %c in ("!line!") do (
 set "line=%c"  
  setlocal enabledelayedexpansion  
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -108,7 +108,7 @@ set "line=win@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/r
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -118,7 +118,7 @@ set "line=%d"
 
 C:\Program Files\ctcmd_uploader>(
 set "line=win@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/win"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -130,14 +130,14 @@ set "line=std@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/r
  set "line=!line: =!"  
  for /F "tokens=* delims= " %b in ("!line!") do (
 set "line=std@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/std"  
- REM ÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ç§»é™¤è¡Œå°¾ç©ºæ ¼  
  for /F "tokens=* delims=" %c in ("!line!") do (
 set "line=%c"  
  setlocal enabledelayedexpansion  
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -149,14 +149,14 @@ set "line=%d"
 
 C:\Program Files\ctcmd_uploader>(
 set "line=std@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/std"  
- REM ÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ç§»é™¤è¡Œå°¾ç©ºæ ¼  
  for /F "tokens=* delims=" %c in ("!line!") do (
 set "line=%c"  
  setlocal enabledelayedexpansion  
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -171,7 +171,7 @@ set "line=std@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/r
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -181,7 +181,7 @@ set "line=%d"
 
 C:\Program Files\ctcmd_uploader>(
 set "line=std@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/std"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -193,14 +193,14 @@ set "line=wsl@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/r
  set "line=!line: =!"  
  for /F "tokens=* delims= " %b in ("!line!") do (
 set "line=wsl@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/wsl"  
- REM ÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ç§»é™¤è¡Œå°¾ç©ºæ ¼  
  for /F "tokens=* delims=" %c in ("!line!") do (
 set "line=%c"  
  setlocal enabledelayedexpansion  
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -212,14 +212,14 @@ set "line=%d"
 
 C:\Program Files\ctcmd_uploader>(
 set "line=wsl@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/wsl"  
- REM ÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ç§»é™¤è¡Œå°¾ç©ºæ ¼  
  for /F "tokens=* delims=" %c in ("!line!") do (
 set "line=%c"  
  setlocal enabledelayedexpansion  
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -234,7 +234,7 @@ set "line=wsl@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/r
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -244,7 +244,7 @@ set "line=%d"
 
 C:\Program Files\ctcmd_uploader>(
 set "line=wsl@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/wsl"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -256,14 +256,14 @@ set "line=module@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_rep
  set "line=!line: =!"  
  for /F "tokens=* delims= " %b in ("!line!") do (
 set "line=module@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/module    "  
- REM ÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ç§»é™¤è¡Œå°¾ç©ºæ ¼  
  for /F "tokens=* delims=" %c in ("!line!") do (
 set "line=%c"  
  setlocal enabledelayedexpansion  
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -275,14 +275,14 @@ set "line=%d"
 
 C:\Program Files\ctcmd_uploader>(
 set "line=module@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/module    "  
- REM ÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ç§»é™¤è¡Œå°¾ç©ºæ ¼  
  for /F "tokens=* delims=" %c in ("!line!") do (
 set "line=%c"  
  setlocal enabledelayedexpansion  
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -297,7 +297,7 @@ set "line=module@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_rep
  set "line=!line!"  
  for /F "tokens=* delims=" %d in ("!line!") do (
 set "line=%d"  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
@@ -307,7 +307,7 @@ set "line=%d"
 
 C:\Program Files\ctcmd_uploader>(
 set "line=module@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/module    "  
- REM ÏÂÃæÕâĞĞÒÆ³ıĞĞÎ²¿Õ¸ñ  
+ REM ä¸‹é¢è¿™è¡Œç§»é™¤è¡Œå°¾ç©ºæ ¼  
  set "line=!line!"  
  set "line=!line: =!"  
  echo !line! 
