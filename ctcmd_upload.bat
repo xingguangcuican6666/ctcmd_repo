@@ -39,7 +39,30 @@ move /y "%HOME%%name%\%name%_%arch%_latest.zip" "%HOME%%name%\%name%_%arch%_%ver
 copy /y %1 "%HOME%%name%\%name%_%arch%_latest.zip"
 cd /d %HOME%
 set GIT_SSH_COMMAND=ssh -i C:\\Users\\xingguangcuican\\.ssh\\id_rsa
-call "%HOME%\ctcmd_trim_space.bat" "%HOME%\all.ctcmd"
+set "infile=%HOME%\all.ctcmd"
+set "outfile=%infile%.trimmed"
+
+(for /f "usebackq delims=" %%a in ("%infile%") do (
+    set "line=%%a"
+    set "line=!line: =!"
+    for /f "tokens=* delims= " %%b in ("!line!") do (
+        set "line=%%a"
+        REM 移除行尾空格
+        for /f "tokens=* delims=" %%c in ("!line!") do (
+            set "line=%%c"
+            setlocal enabledelayedexpansion
+            set "line=!line!"
+            for /f "tokens=* delims=" %%d in ("!line!") do (
+                set "line=%%d"
+                REM 下面这行移除行尾空格
+                set "line=!line!"
+                set "line=!line: =!"
+                echo !line!
+            )
+            endlocal
+        )
+    )
+)) > "%outfile%"
 copy /Y "%HOME%\all.ctcmd.trimmed" "%HOME%\all.ctcmd"
 git config --global user.email "xingguangcuican666@foxmail.com"
 git config --global user.name "xingguangcuican6666"
