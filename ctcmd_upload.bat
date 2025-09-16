@@ -1,4 +1,4 @@
-@echo on
+@echo off
 set now_work="%cd%"
 cd /d %~dp0
 git pull -v
