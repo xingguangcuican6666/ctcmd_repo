@@ -1,4 +1,4 @@
-@echo off
+@echo on
 REM 用法：ctcmd_trim_space.bat 文件名
 setlocal enabledelayedexpansion
 
