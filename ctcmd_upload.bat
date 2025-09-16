@@ -32,7 +32,7 @@ for /f "tokens=* delims=" %%a in ('type "%HOME%\all.ctcmd"') do (
 )
 :skip
 if "%found%"=="0" (
-    echo %name%@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/%name% >> "%HOME%\all.ctcmd"    
+    echo -n %name%@https://raw.githubusercontent.com/xingguangcuican6666/ctcmd_repo/refs/heads/main/%name% >> "%HOME%\all.ctcmd"    
 )
 mkdir "%HOME%%name%"
 move /y "%HOME%%name%\%name%_%arch%_latest.zip" "%HOME%%name%\%name%_%arch%_%version%.zip"
