@@ -12,6 +12,7 @@
   ],
   "7zip": {
     "version": "0.0.3",
+    "latest": "0.0.3",
     "depends": [],
     "path": "7zip/7zip",
     "files": [
@@ -23,6 +24,7 @@
   },
   "dev": {
     "version": "0.0.14",
+    "latest": "0.0.14",
     "depends": [
       "libctcmd"
     ],
@@ -38,6 +40,7 @@
   },
   "libctcmd": {
     "version": "0.0.15",
+    "latest": "0.0.15",
     "depends": [],
     "path": "libctcmd/libctcmd",
     "files": [
@@ -48,6 +51,7 @@
   },
   "module": {
     "version": "0.0.22",
+    "latest": "0.0.22",
     "depends": [],
     "path": "module/module",
     "files": [
@@ -60,6 +64,7 @@
   },
   "std": {
     "version": "未指定",
+    "latest": "未指定",
     "depends": [],
     "path": "std/std",
     "files": [
@@ -69,6 +74,7 @@
   },
   "vcpkg": {
     "version": "0.0.4",
+    "latest": "0.0.4",
     "depends": [],
     "path": "vcpkg/vcpkg",
     "files": [
@@ -87,6 +93,7 @@
   },
   "test": {
     "version": "未指定",
+    "latest": "未指定",
     "depends": [],
     "path": "test/test",
     "files": [
@@ -95,6 +102,7 @@
   },
   "win": {
     "version": "未指定",
+    "latest": "未指定",
     "depends": [],
     "path": "win/win",
     "files": [
@@ -107,6 +115,7 @@
   },
   "wsl": {
     "version": "未指定",
+    "latest": "未指定",
     "depends": [],
     "path": "wsl/wsl",
     "files": [

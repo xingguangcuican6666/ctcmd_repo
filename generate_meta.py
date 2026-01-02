@@ -38,6 +38,7 @@ def read_module_info(module_dir, module_name):
     """读取模块的depends.txt和version.txt文件"""
     module_info = {
         'version': '未指定',
+        'latest': '未指定',
         'depends': [],
         'path': f'{module_name}/{module_name}',
         'files': []
@@ -62,6 +63,7 @@ def read_module_info(module_dir, module_name):
                     with open(item_path, 'r', encoding='utf-8') as f:
                         version = f.read().strip()
                         module_info['version'] = version
+                        module_info['latest'] = version
                 except Exception as e:
                     print(f"读取版本文件失败 {item_path}: {e}")
             
