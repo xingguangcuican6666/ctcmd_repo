@@ -1,0 +1,120 @@
+{
+  "packages": [
+    "7zip",
+    "dev",
+    "libctcmd",
+    "module",
+    "std",
+    "vcpkg",
+    "test",
+    "win",
+    "wsl"
+  ],
+  "7zip": {
+    "version": "0.0.3",
+    "depends": [],
+    "path": "7zip/7zip",
+    "files": [
+      "version.txt",
+      "tools",
+      "help.json",
+      "7zip.bat"
+    ]
+  },
+  "dev": {
+    "version": "0.0.14",
+    "depends": [
+      "libctcmd"
+    ],
+    "path": "dev/dev",
+    "files": [
+      "depends.txt",
+      "version.txt",
+      "tools",
+      "README.md",
+      "init.bat",
+      "help.json"
+    ]
+  },
+  "libctcmd": {
+    "version": "0.0.15",
+    "depends": [],
+    "path": "libctcmd/libctcmd",
+    "files": [
+      "version.txt",
+      "tools",
+      "setup.bat"
+    ]
+  },
+  "module": {
+    "version": "0.0.22",
+    "depends": [],
+    "path": "module/module",
+    "files": [
+      "winpt.bat",
+      "version.txt",
+      "tools",
+      "help.json",
+      ".vscode"
+    ]
+  },
+  "std": {
+    "version": "未指定",
+    "depends": [],
+    "path": "std/std",
+    "files": [
+      "help.json",
+      "cls.bat"
+    ]
+  },
+  "vcpkg": {
+    "version": "0.0.4",
+    "depends": [],
+    "path": "vcpkg/vcpkg",
+    "files": [
+      "version.txt",
+      "update.bat",
+      "uninstall.bat",
+      "tools",
+      "search.bat",
+      "remove.bat",
+      "list.bat",
+      "install.bat",
+      "init.bat",
+      "help.json",
+      "command.bat"
+    ]
+  },
+  "test": {
+    "version": "未指定",
+    "depends": [],
+    "path": "test/test",
+    "files": [
+      "test.bat"
+    ]
+  },
+  "win": {
+    "version": "未指定",
+    "depends": [],
+    "path": "win/win",
+    "files": [
+      "pwsh.bat",
+      "notepad.bat",
+      "help.json",
+      "editor.bat",
+      "cmd.bat"
+    ]
+  },
+  "wsl": {
+    "version": "未指定",
+    "depends": [],
+    "path": "wsl/wsl",
+    "files": [
+      "upgrade.bat",
+      "update.bat",
+      "install_pkg.bat",
+      "help.json",
+      "bash.bat"
+    ]
+  }
+}
